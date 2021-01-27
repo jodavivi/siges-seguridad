@@ -8,5 +8,6 @@
     "claveCripto": "Peru123456.",
     "claveJwt":"Peru123456.",
     "tiempoExpiracion": "8h",
-    "tiempoSinExpiracion": "900d"
+    "tiempoSinExpiracion": "900d",
+    "seqRol": "sistemas.\"rol_Id_seq\""
 }
