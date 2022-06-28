@@ -1,3 +1,4 @@
 {
-    "viewUsuarioClave": "select U.\"Id\",  U.\"Usuario\", U.\"Email\", XUC.\"Clave\"  from sistemas.usuario U  inner join ( select UC.* from ( select \"UsuarioId\", \"Clave\", MAX(\"Id\") as \"Id\" from sistemas.usuario_clave uc  where uc.\"EstadoId\" = 1 group by \"UsuarioId\", \"Clave\" ) SUC  inner join sistemas.usuario_clave UC on SUC.\"Id\" = UC.\"Id\" ) XUC on U.\"Id\" = XUC.\"UsuarioId\"  where U.\"EstadoId\" = 1"
+    "viewUsuarioClave": "select U.\"Id\",  U.\"Usuario\", U.\"Email\", XUC.\"Clave\"  from sistemas.usuario U  inner join ( select UC.* from ( select \"UsuarioId\", \"Clave\", MAX(\"Id\") as \"Id\" from sistemas.usuario_clave uc  where uc.\"EstadoId\" = 1 group by \"UsuarioId\", \"Clave\" ) SUC  inner join sistemas.usuario_clave UC on SUC.\"Id\" = UC.\"Id\" ) XUC on U.\"Id\" = XUC.\"UsuarioId\"  where U.\"EstadoId\" = 1 and U.\"CodEstadoUsuario\" = 1",
+    "viewUltimaClave":"select ucx.* from sistemas.usuario_clave ucx inner join ( select MAX(uc.\"Id\") as \"Id\", uc.\"UsuarioId\" from sistemas.usuario_clave uc  where uc.\"EstadoId\" = 1  group by uc.\"UsuarioId\") ucxx on ucx.\"Id\" = ucxx.\"Id\" where ucx.\"EstadoId\" = 1"
 }

@@ -1,0 +1,10 @@
+[2022-06-25T18:09:24.608] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3001
+[2022-06-25T18:11:50.891] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3001
+[2022-06-25T18:13:48.529] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3001
+[2022-06-25T18:24:57.440] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3001
+[2022-06-25T18:37:48.012] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3001
+[2022-06-25T18:39:19.228] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
+[2022-06-25T18:39:19.229] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
+[2022-06-25T18:39:19.230] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
+[2022-06-25T18:39:19.480] [DEBUG] siges_seguridad - aLista: 1
+[2022-06-25T21:11:37.757] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3001

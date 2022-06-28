@@ -3,6 +3,7 @@
     "seqUsuarioClave": "sistemas.\"usuario_clave_Id_seq\"",
     "seqAplicacion": "sistemas.\"aplicacion_Id_seq\"",
     "seqGrupo": "sistemas.\"grupo_Id_seq\"",
+    "seqUsuarioRol": "sistemas.\"usuario_rol_Id_seq\"",
     "seqAplicacionRol": "sistemas.\"aplicacion_rol_Id_seq\"",
     "seqGrupoAplicacion": "sistemas.\"grupo_aplicacion_Id_seq\"" ,
     "claveCripto": "Peru123456.",

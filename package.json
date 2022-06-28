@@ -23,14 +23,17 @@
     "sequelize": "^6.3.0",
     "sequelize-views-support": "^1.2.2",
     "shortid": "^2.2.15",
-    "slug": "^3.3.0"
+    "slug": "^3.3.0",
+    "log4js": "^6.5.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "start": "nodemon ./lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=development&& nodemon ./lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&& nodemon ./lib/index.js",
+    "prod": "set NODE_ENV=production&& nodemon ./lib/index.js"
   },
   "repository": {
     "type": "git",
