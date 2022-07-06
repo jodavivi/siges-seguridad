@@ -6,6 +6,7 @@
     "seqUsuarioRol": "sistemas.\"usuario_rol_Id_seq\"",
     "seqAplicacionRol": "sistemas.\"aplicacion_rol_Id_seq\"",
     "seqGrupoAplicacion": "sistemas.\"grupo_aplicacion_Id_seq\"" ,
+    "seqUsuarioEmpresa": "sistemas.\"usuario_empresa_Id_seq\"",
     "claveCripto": "Peru123456.",
     "claveJwt":"Peru123456.",
     "tiempoExpiracion": "8h",

@@ -1,36 +1,43 @@
-[2022-07-02T13:21:31.531] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
-[2022-07-02T13:23:06.241] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
-[2022-07-02T13:23:06.244] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
-[2022-07-02T13:23:06.245] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
-[2022-07-02T13:23:06.468] [DEBUG] siges_seguridad - aLista: 1
-[2022-07-02T13:24:03.544] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
-[2022-07-02T13:24:04.396] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
-[2022-07-02T13:24:04.397] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
-[2022-07-02T13:24:04.397] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
-[2022-07-02T13:24:04.421] [DEBUG] siges_seguridad - aLista: 1
-[2022-07-02T13:26:11.176] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
-[2022-07-02T13:26:14.484] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
-[2022-07-02T13:26:14.485] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
-[2022-07-02T13:26:14.485] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
-[2022-07-02T13:26:14.510] [DEBUG] siges_seguridad - aLista: 1
-[2022-07-02T13:26:43.857] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
-[2022-07-02T13:26:46.001] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
-[2022-07-02T13:26:46.002] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
-[2022-07-02T13:26:46.006] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
-[2022-07-02T13:26:46.034] [DEBUG] siges_seguridad - aLista: 1
-[2022-07-02T13:27:34.908] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
-[2022-07-02T13:27:34.908] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
-[2022-07-02T13:27:34.909] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
-[2022-07-02T13:27:35.163] [DEBUG] siges_seguridad - aLista: 1
-[2022-07-02T15:13:08.155] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
-[2022-07-02T15:13:08.158] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
-[2022-07-02T15:13:08.158] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
-[2022-07-02T15:13:08.643] [DEBUG] siges_seguridad - aLista: 1
-[2022-07-02T18:52:59.210] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
-[2022-07-02T18:52:59.211] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
-[2022-07-02T18:52:59.211] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
-[2022-07-02T18:52:59.529] [DEBUG] siges_seguridad - aLista: 1
-[2022-07-02T19:02:03.188] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
-[2022-07-02T19:02:03.188] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
-[2022-07-02T19:02:03.188] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
-[2022-07-02T19:02:03.375] [DEBUG] siges_seguridad - aLista: 1
+[2022-07-06T14:51:39.975] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T14:53:28.694] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T14:58:44.441] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:00:20.148] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:00:55.658] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
+[2022-07-06T15:00:55.660] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
+[2022-07-06T15:00:55.660] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
+[2022-07-06T15:00:55.839] [DEBUG] siges_seguridad - aLista: 1
+[2022-07-06T15:11:03.786] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:12:25.404] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:17:10.773] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:19:19.851] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:20:49.484] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:21:29.822] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:22:25.701] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:25:05.251] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:26:47.757] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:27:04.280] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:27:46.597] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:45:18.375] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:45:26.234] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:45:51.764] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:46:35.605] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:47:43.073] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:48:38.725] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:49:07.455] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:51:48.152] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:54:01.577] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T15:54:05.537] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
+[2022-07-06T15:54:05.537] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
+[2022-07-06T15:54:05.538] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
+[2022-07-06T15:54:05.573] [DEBUG] siges_seguridad - aLista: 1
+[2022-07-06T18:03:32.137] [DEBUG] siges_seguridad - query: select U."Id",  U."Usuario", U."Email", XUC."Clave"  from sistemas.usuario U  inner join ( select UC.* from ( select "UsuarioId", "Clave", MAX("Id") as "Id" from sistemas.usuario_clave uc  where uc."EstadoId" = 1 group by "UsuarioId", "Clave" ) SUC  inner join sistemas.usuario_clave UC on SUC."Id" = UC."Id" ) XUC on U."Id" = XUC."UsuarioId"  where U."EstadoId" = 1 and U."CodEstadoUsuario" = 1 and  upper(U."Usuario") =  ? and  XUC."Clave" = ?
+[2022-07-06T18:03:32.139] [DEBUG] siges_seguridad - sUsuario: JOSEDAVID
+[2022-07-06T18:03:32.140] [DEBUG] siges_seguridad - sClave: 5825915c252537f992c064c10e4c2b132bd62ea9
+[2022-07-06T18:03:32.338] [DEBUG] siges_seguridad - aLista: 1
+[2022-07-06T18:24:31.203] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T18:32:52.229] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T18:35:04.189] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T18:35:33.554] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T18:36:20.584] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T18:37:09.376] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
+[2022-07-06T18:37:31.381] [DEBUG] siges_seguridad - Servidor funcionando correctamente en el puerto: 3003
