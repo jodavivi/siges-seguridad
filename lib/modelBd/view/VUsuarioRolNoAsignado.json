@@ -1,0 +1,3 @@
+{
+    "viewUsuarioRolNoAsignado": "select sr.\"Codigo\", sr.\"Nombre\" from (select  r.\"Codigo\", r.\"Nombre\" from sistemas.rol r where  r.\"CodEmpresa\" = ? and r.\"EstadoId\" = 1 and r.\"EstadoRolCod\" = 1) sr left join (select ur.\"CodRol\", ur.\"Rol\" from sistemas.usuario_rol ur where ur.\"CodEmpresa\" = ? and ur.\"UsuarioId\" = ?) sur on sr.\"Codigo\" = sur.\"CodRol\"  where sur.\"CodRol\" is null"
+}
